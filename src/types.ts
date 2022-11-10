@@ -1,6 +1,6 @@
 export interface RequestArguments {
 	readonly method: string;
-	readonly params?: readonly unknown[] | object;
+	readonly params?: unknown[] | object;
 }
 
 export interface Web5RequestProvider {
