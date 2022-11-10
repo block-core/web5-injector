@@ -8,7 +8,7 @@ export class Web5 {
 	currentProvider?: Web5RequestProvider;
 
 	/** Get all registered providers. */
-	public get providers() {
+	get providers() {
 		return this.#providers;
 	}
 
