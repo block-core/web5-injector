@@ -1,3 +1,10 @@
+## <small>0.0.2 (2022-11-10)</small>
+
+* Remove the readonly keyword from params ([dbc8a6f](https://github.com/block-core/web5-injector/commit/dbc8a6f))
+* Update version and changelog ([e48aafd](https://github.com/block-core/web5-injector/commit/e48aafd))
+
+
+
 ## <small>0.0.1 (2022-11-10)</small>
 
 * Add an initial basic web5-injector library ([3c9c35d](https://github.com/block-core/web5-injector/commit/3c9c35d))
