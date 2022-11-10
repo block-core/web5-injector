@@ -1,0 +1,60 @@
+{
+	"name": "@blockcore/web5-injector",
+	"version": "0.0.1",
+	"description": "Web5 Injector",
+	"type": "module",
+	"exports": "./lib/index.js",
+	"types": "./lib/index.d.ts",
+	"files": [
+		"lib/**/*"
+	],
+	"engines": {
+		"node": ">=18.*"
+	},
+	"scripts": {
+		"build": "tsc",
+		"lint": "eslint .",
+		"test": "npm run lint && ava",
+		"version": "node -p \"require('./package.json').version\"",
+		"changelog": "conventional-changelog -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md"
+	},
+	"keywords": [
+		"web5",
+		"did"
+	],
+	"author": "Blockcore",
+	"license": "MIT",
+	"homepage": "https://github.com/block-core/web5-injector",
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:block-core/web5-injector.git"
+	},
+	"bugs": {
+		"url": "https://github.com/block-core/web5-injector/issues"
+	},
+	"devDependencies": {
+		"@blockcore/tsconfig": "^0.0.1",
+		"@typescript-eslint/eslint-plugin": "^5.42.1",
+		"@typescript-eslint/parser": "^5.42.1",
+		"ava": "^5.0.1",
+		"eslint": "^8.27.0",
+		"eslint-config-standard": "^17.0.0",
+		"eslint-plugin-import": "^2.26.0",
+		"eslint-plugin-n": "^15.5.1",
+		"eslint-plugin-promise": "^6.1.1",
+		"ts-node": "^10.9.1",
+		"typescript": "^4.8.4"
+	},
+	"ava": {
+		"files": [
+			"test/*"
+		],
+		"timeout": "1m",
+		"extensions": {
+			"ts": "module"
+		},
+		"nodeArguments": [
+			"--loader=ts-node/esm"
+		]
+	}
+}

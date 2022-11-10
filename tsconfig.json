@@ -1,0 +1,14 @@
+{
+  "extends": "@blockcore/tsconfig",
+  "compilerOptions": {
+	"outDir": "lib",
+  },
+  "include": [
+		"src"
+, "ambient.d.ts"	],
+	"ts-node": {
+		"transpileOnly": true,
+		"files": true,
+		"experimentalResolver": true
+	}
+}
