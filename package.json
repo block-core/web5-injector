@@ -1,6 +1,6 @@
 {
 	"name": "@blockcore/web5-injector",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "Web5 Injector",
 	"type": "module",
 	"exports": "./lib/index.js",
