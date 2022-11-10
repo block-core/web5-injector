@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      PROJECT_NAME: 'web5-injector'
+      PROJECT_NAME: 'blockcore-web5-injector'
 
     steps:
     - uses: actions/checkout@master
